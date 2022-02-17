@@ -1,11 +1,11 @@
+import RoutesApp from './routes';
+
 import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      Olá Mundo
+    <div className="app">
+      <RoutesApp />
     </div>
-  );
+  )
 }
-
-export default App;

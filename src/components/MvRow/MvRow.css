@@ -1,0 +1,65 @@
+.mvrow {
+    margin-bottom: 30px;
+}
+
+.mvrow h2 {
+    margin: 0px 0px 0px 30px;
+}
+
+.mvrow-listarea {
+    overflow-x: hidden;
+    padding-left: 30px;
+}
+
+.mvrow-list {
+    width: 999999999px;
+    transition: all ease .7s;
+}
+
+.mvrow-item {
+    display: inline-block;
+    width: 150px;
+    cursor: pointer;
+}
+
+.mvrow-item img {
+    width: 100%;
+    transform: scale(.9);
+    transition: .5s;
+}
+
+.mvrow-item img:hover {
+    transform: scale(1);
+}
+
+.mvrow-left, .mvrow-right {
+    position: absolute;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.mvrow-left {
+    left: 0;
+}
+
+.mvrow-right {
+    right: 0;
+}
+
+.mvrow:hover .mvrow-left, .mvrow:hover .mvrow-right {
+    opacity: 1;
+}
+
+@media (max-width: 760px) {
+    .mvrow-left, .mvrow-right {
+        opacity: 1;
+    }
+}

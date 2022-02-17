@@ -8,7 +8,7 @@ const basicFetch = async (endpoint) => {
     return json;
 }
 
-export default {
+const api = {
     getHomeList: async () => {
         return [
             {
@@ -54,3 +54,5 @@ export default {
         ]
     }
 }
+
+export default api;
